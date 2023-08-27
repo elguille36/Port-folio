@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port-folio Web</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo port-folio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-menu">
+            <span class="btn">
+                <i class="bi bi-chevron-double-down" id="open-btn"></i>
+                <i class="bi bi-chevron-double-up" id="close-btn"></i>
+            </span>
+            <button class="dark">
+                <i class="bi bi-sun" id="open-dark"></i>
+                <i class="bi bi-moon-stars-fill" id="close-dark"></i></button>
+            <a href="#"><img src="./img/logo port-folio.png" width="100" alt="imagen de logo" class="logo"></a>
+            <ul class="menu">
+                <li><a href="#inicio" class="enlace-menu">Inicio</li></a>
+                <li><a href="#SobreMi" class="enlace-menu">Sobre Mi</li></a>
+                <li><a href="#Servicio" class="enlace-menu">Servicio</li></a>
+                <li><a href="#contacto" class="enlace-menu">Contacto</li></a>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="inicio">
+
+            <div class="banner-content">
+
+                <img src="./img/img-apliada.jpg" alt="imagen de programacion" class="img-banner">
+                <div class="banner-text">
+                    <h1 class="titulo">Programador Front-End</h1>
+                    <p>Desarrollador de aplicaciones Web, usando diferente tipos de lenguaje HTML, CSS y JAVASCRIPTS</p>
+                    <a href="https://es.wikipedia.org/wiki/Desarrollo_web_Front-end" class="Mas-info" target="_blank">>> Mas inform...</a><br>
+                </div>
+                <span class="icono">
+                    <i class="bi bi-pc-display" id="icon"></i>
+                    <i class="bi bi-pc-display-horizontal" id="icon"></i>
+                    <i class="bi bi-book" id="icon"></i>
+                </span>
+
+            </div>
+        </section>
+
+        <section id="SobreMi">
+            <div class="Sobremi-content">
+                <img src="./img/foto personal 1.png">
+                <div class="Sobremi-text">
+                    <h2>Sobre Mi</h2>
+                    <p><strong>!Soy una Persona responsable,me esfuerzo cada día poraprender, buscar soluciones a los
+                            diferentes problemas del dia a dia, enfocado siempre en mis actividades. Tengo habilidades en
+                            el área deDesarrollo Web, Diseño y usode herramientas tecnologicas.!</strong></p>
+                </div>
+            </div>
+        </section>
+        <section id="Servicio">
+            <h2 class="titulo-servicio">Servicio</h2>
+            <div class="Servicio-content">
+
+                <div class="Servicio-job">
+
+                    <h3>Mis Herramientas Tecnologicas</h3>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Bootstrap 5</li>
+                        <li>ChatGPT</li>
+                        <li>GitHub</li>
+                        <li>Contrast-Ratio</li>
+                        <li>Pinterest</li>
+                        <li>Font Awesone</li>
+                    </ul>
+
+                </div>
+
+                <div class="Servicio-img-slider">
+                    <ul class="carousel">
+                        <li class="carousel-item"><img src="./img/canva.png" alt="foto canva"></li>
+                        <li class="carousel-item"><img src="./img/bootstrap.png" alt="imagen bootstrap"></li>
+                        <li class="carousel-item"><img src="./img/Chatgpt-Logo-PNG.png" alt="imagen chatgpt"></li>
+                        <li class="carousel-item"><img src="./img/github.png" class="img-github" alt="imagen de github">
+                        </li>
+                        <li class="carousel-item"><img src="./img/contrast-ratio.png" alt="imagen contrast"></li>
+                        <li class="carousel-item"><img src="./img/pinterest.png" alt="imagen pinterest"></li>
+                        <li class="carousel-item"> <img src="./img/font_awesome_logo.png" alt="imagen font"></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="contacto-content">
+                <h4>Contáctame</h4>
+                <p>Puedes escribirme por mis Redes sociales o directamente en el formulario que se encuentra aqui en la
+                    parte de abajo.!</p>
+                <div class="contacto-group">
+                    <form class="formulario" action="procesar_formulario.php" method="POST">
+                        <div>
+                            <input type="text" name="name" placeholder="Nombre Completo" class="form-contacto">
+                            <input type="text" name="last name" placeholder="Apellido Completo" class="form-contacto">
+                            <input type="email" name="email" placeholder="Correo Electronico" class="form-contacto">
+                            <input type="tel" name="phone" placeholder="Telefono" class="form-contacto">
+                        </div>
+                        <textarea name="coments" placeholder="mensaje" rows="4" class="form-contacto"></textarea>
+                        <input type="submit" value="enviar" class="btn-enviar">
+                    </form>
+                </div>
+                <div class="contacto-img">
+                    <img src="./img/contact.png" alt="imagen contacto">
+                </div>
+            </div>
+            <div class="sociales">
+                <a href="https://www.facebook.com/guillermo.perez.980315/" target="_blank" class="redes-sociales"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/geperezrsud/" target="_blank" class="redes-sociales"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/guillermo-enrique-perez/" target="_blank" class="redes-sociales"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="pie-de-pagina"><i class="bi bi-c-circle"></i>Copyright.Derechos Reservados/
+            Geperezrsud@gmail.com
+        </p>
+        <span class="btn-inicio">Ir al inicio
+            <a href="#inicio"><i class="bi bi-arrow-up-circle-fill" id="volver-inicio"></i></a></span>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
