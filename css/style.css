@@ -438,6 +438,7 @@ section{
     body.menu-active .menu {
 
         display: block;
+        margin: 0 0.2rem;
     }
 
     body.menu-active .enlace-menu{
@@ -512,7 +513,7 @@ section{
 
     #contacto{
 
-        height: 105vh;
+        height: 115vh;
     }
 
     .contacto-content h4{
@@ -527,7 +528,7 @@ section{
 
     .contacto-img img{
 
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 70%;
     }
 
@@ -633,12 +634,12 @@ section{
 
     .banner-content img{
 
-        height: 50vh;
+        height: 53vh;
     }
 
 #inicio{
 
-    height: 50vh;
+    height: 53vh;
 }
 
 .icono{
@@ -655,14 +656,14 @@ section{
 
 .Sobremi-text{
 
-    top: 54%;
+    top: 50%;
 }
 
 .Sobremi-text h2{
 
     position: absolute;
     left: 67%;
-    top: -119%;
+    top: -100%;
     color: azure;
 }
 
