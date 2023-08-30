@@ -40,7 +40,21 @@ nav{
     position: absolute;
     margin-left: 1%;
     box-shadow: 1px 1px 1px rgb(192, 209, 97);
-  
+    animation: rotate 5s linear infinite;
+}
+
+
+@keyframes rotate{
+
+    from{
+        
+       transform: rotateY(360deg);
+    }
+
+    to{
+
+        transform: rotateY(0deg);
+    }
 }
 
 .menu li{
@@ -78,19 +92,32 @@ nav{
     display: none;
 }
 
+.dark{
+    display: block;
+    margin-right: 10px;
+    margin-top: 20px;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+i#open-dark{
+
+    color: azure;
+}
+
+i#close-dark{
+
+    display: none;
+}
+
 
 .dark{
 
     float: right;
   
   }
-
-
-.dark{
-
-    display: none;
-}
-
 
 section{
 
@@ -99,7 +126,7 @@ section{
 
 #inicio{
 
-    height: 84vh;
+    height: 64vh;
     position: relative;
 }
 
@@ -108,10 +135,10 @@ section{
 
     position: absolute;
     color:rgb(235, 247, 68);
-    top:63%;
+    top:30%;
     right: 62%;
     margin-left: 14%;
-    transform: translateX(0%) translateY(-17%);
+    font-size: 20px;
 
     
 }
@@ -120,7 +147,13 @@ section{
 
     color: azure;
     text-decoration: none;
-    margin-bottom: 30px;
+}
+
+.Mas-info:hover{
+
+    background-color: rgb(235, 247, 68);
+    color:rgb(87, 95, 95);
+    border-radius: 10px;
 }
 
 .banner-content img{
@@ -132,6 +165,7 @@ section{
 
     margin-bottom: 10px;
     color: azure;
+    font-size: 40px;
 }
 
 .icono{
@@ -139,7 +173,7 @@ section{
     color:rgb(196, 230, 117);
     font-size: 40px;
     top: 83%;
-    left: 20%;
+    left: 30%;
    
 }
 
@@ -158,21 +192,32 @@ section{
 
  .Sobremi-text{
      position: absolute;
-     top:34%;
+     top:60%;
      text-align: center;
      color:rgb(235, 247, 68);
+     padding: 0 20px;
+     font-size: 20px;
+    
  }
 
  .Sobremi-text h2{
 
-    font-size: 35px;
+    font-size: 40px;
+    color: azure;
+    position: absolute;
+    top: -324%;
+    left: 70%;
+
     
  }
 
- .Sobremi-img{
+ .Sobremi-content img{
+    width: 17%;
     position: absolute;
-    top:39%;
-    left: 15%;
+    top: 10%;
+    left: 41%;
+    border-radius: 15%;
+
  }
 
  .img-personal{
@@ -192,7 +237,7 @@ section{
 .titulo-servicio{
 
     text-align: center;
-     font-size: 35px;
+     font-size: 40px;
     color:azure;
 
 }
@@ -227,6 +272,7 @@ section{
     margin-left: 1.5rem;
     color: rgb(235, 247, 68);
     list-style-type:circle;
+    line-height: 33px;
  }
 
  .Servicio-job h3{
@@ -401,17 +447,11 @@ section{
 
     position: relative;
     background-color: #0a0a0a;
-    height: 170px;
+    width: 100%;
+    height: 100px;
     border-top:#726b6b;
  }
 
- .btn-inicio{
-    position: absolute;
-    color: azure;
-    left: 65%;
-    top:70%;
-    font-size: 20px;
- }
 
  i#volver-inicio{
 
@@ -422,8 +462,13 @@ section{
 
     position: absolute;
     color: azure;
-    top:25%;
-    left: 20%;
+    top:30%;
+    left: 35%;
+ }
+
+ .btn-inicio{
+
+    display: none;
  }
 
 
@@ -438,7 +483,13 @@ section{
     body.menu-active .menu {
 
         display: block;
-        margin: 0 0.2rem;
+    }
+
+    body.menu-active .menu li{
+
+        margin: 0 5px;
+        padding: 8% 2px;
+       
     }
 
     body.menu-active .enlace-menu{
@@ -458,6 +509,26 @@ section{
 
         display: none;
     }
+
+    .banner-text{
+
+        font-size: 15px;
+        right: 33%;
+        top: 40%;
+    }
+
+    .titulo{
+
+        font-size: 25px;
+    }
+
+    .Sobremi-content img{
+
+        left: 40%;
+        top: 8%;
+    }
+   
+
 .Sobremi-text{
 
     top:40%;
@@ -465,8 +536,8 @@ section{
 
     .Sobremi-text h2{
         position: absolute;
-        left: 61%;
-        top: -72%;
+        left: 69%;
+        top: -108%;
         color: azure;
         font-size: 25px;
     }
@@ -483,20 +554,15 @@ section{
         display: flex;
         flex-flow: column;
         align-items: center;
-        height: 67vh;
+        height: 65vh;
     }
 
     .Servicio-job{
 
         margin-left: 0;
         width: 80%;
-        height: 50%;
+        height: 62%;
         border: none;
-    }
-
-    .Servicio-job ul{
-
-        line-height: 35px;
     }
 
     .titulo-servicio{
@@ -506,7 +572,7 @@ section{
 
     .Servicio-img-slider{
 
-        margin-top: 0;
+        margin-top: 20px;
         width: 120px;
         height: 120px;
     }
@@ -521,10 +587,16 @@ section{
         font-size: 25px;
     }
 
+    .contacto-content{
+
+        padding: 0;
+    }
+
     .form-contacto, .contacto-img{
 
         width: 100%;
     }
+
 
     .contacto-img img{
 
@@ -550,25 +622,8 @@ section{
 
     .sociales{
 
-        left: 9%;
-        top: 92%;
-    }
-
-
- }
-
-
-@media(max-width: 1023px){
-
-    .menu{
-
-        display: none;
-    }
-
-
-    .logo{
-
-        margin-top: 10px;
+        left: 10%;
+        top: 87%;
     }
 
     .btn{
@@ -576,6 +631,48 @@ section{
         padding-right: 10px;
         margin-top: 6px;
     }
+
+
+    .menu{
+
+        display: none;
+    }
+
+    .pie-de-pagina{
+
+        left: 7%;
+    }
+
+    .btn-inicio{
+
+        display: block;
+    }
+
+    .btn-inicio{
+        position: absolute;
+        color: azure;
+        left: 65%;
+        top:75%;
+        font-size: 20px;
+     }
+
+     footer{
+
+        height: 150px;
+     }
+    
+
+
+ }
+
+
+@media(max-width: 1024px){
+
+    .logo{
+
+        margin-top: 10px;
+    }
+
 
     i#close-btn{
 
@@ -607,9 +704,8 @@ section{
 
     .banner-text{
 
-        top:31%;
         right: 47%;
-        transform: translateX(0%) translateY(-15%)
+        transform: translateX(0%) translateY(-16%);
         
     }
 
@@ -677,7 +773,6 @@ section{
 
     width: 22%;
     margin-top: 34px;
-    margin-left: 40%;
     border-radius: 22%;
     box-shadow: 1px 1px 5px rgb(192, 209, 97);
   
@@ -694,171 +789,24 @@ section{
     font-size: 15px;
 }
 
-.Servicio-job{
-
-    height: 60%;
-    margin-top: 3rem;
-    border-radius: 5px;
-}
 
 .Servicio-img-slider{
 
     margin-left: 9%;
-    margin-top: 8%;
+    margin-top: 10%;
+}
+
+.contacto-img img{
+
+    width: 60%;
+}
+
+.pie-de-pagina{
+
+   text-align: center;
 }
 
 
 }
 
 
-@media(min-width:1024px){
-
-    .banner-content img{
-
-        height: 84vh;
-    }
-
-    .banner-text{
-
-        color:rgb(235, 247, 68);
-        top:40%;
-        right: 54%;
-        font-size: 20px;
-        transform: translateX(0%) translateY(-17%);
-    
-    }
-
-    .dark{
-
-        margin-right: 1%;
-    }
-
-
-    .banner-text .titulo{
-
-        font-size: 40px;
-    }
-
-    .banner-text p{
-
-        margin-bottom: 5px;
-    }
-
-    .banner-text a{
-
-        background-color: azure;
-        color: rgb(87, 95, 95);
-        border-radius: 10px;
-        padding: 2px;
-
-    }
-
-    .Mas-info:hover{
-
-        background-color: rgb(235, 247, 68);
-        color:rgb(87, 95, 95);
-    }
-
-    #SobreMi{
-
-        height: 52vh;
-    }
-
-    .Sobremi-text h2{
-
-        left: 70%;
-        position: absolute;
-        top: -134%;
-        color: azure;
-        font-size: 40px;
-      
-    } 
-
-    .Sobremi-text{
-
-        top:44%
-    }
-    .Sobremi-text p{
-
-        font-size: 22px;
-        padding: 0 15px;
-
-    }
-
-
-    .Sobremi-content img{
-
-        position: absolute;
-        width: 16%;
-        top:2%;
-        left: 42%;
-        border-radius: 22%;
-        box-shadow: 1px 1px 5px rgb(192, 209, 97);
-    }
-
-    .dark{
-        display: block;
-        margin-right: 10px;
-        margin-top: 20px;
-        border:none;
-        background: transparent;
-        cursor: pointer;
-        font-size: 25px;
-    }
-
-    i#open-dark{
-
-        color: azure;
-    }
-
-    i#close-dark{
-
-        display: none;
-    }
-
-    #Servicio{
-
-        height: 56vh;
-    }
-
-    .Servicio-img{
-
-        padding-left: 5%;
-    }
-
-    .titulo-servicio{
-
-        font-size: 40px;
-    }
-
-    .Servicio-job {
-
-        border-radius: 10px;
-        height: 82%;
-        margin-top: 3rem;
-    
-    }
-
-    .Servicio-job ul{
-
-        font-size: 20px;
-        margin-top: 5px;
-    }
-
-    footer{
-        width: 100%;
-        height: 50px;
-    }
-
-    .btn-inicio{
-
-        display: none;
-    }
-
- .pie-de-pagina{
-
-  left: 35%;
- }
-
-    
-}
