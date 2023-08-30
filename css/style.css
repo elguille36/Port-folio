@@ -489,6 +489,7 @@ section{
 
         margin: 0 5px;
         padding: 8% 2px;
+        line-height: 0;
        
     }
 
@@ -514,7 +515,7 @@ section{
 
         font-size: 15px;
         right: 33%;
-        top: 40%;
+        top: 34%;
     }
 
     .titulo{
