@@ -530,15 +530,10 @@ section{
     }
    
 
-.Sobremi-text{
-
-    top:40%;
-}
-
     .Sobremi-text h2{
         position: absolute;
         left: 69%;
-        top: -108%;
+        top: -65%;
         color: azure;
         font-size: 25px;
     }
@@ -624,7 +619,7 @@ section{
     .sociales{
 
         left: 10%;
-        top: 87%;
+        top: 92%;
     }
 
     .btn{
@@ -741,7 +736,7 @@ section{
 
 .icono{
 
-    top: 88%;
+    top: 91%;
     left: 25%;
     font-size: 25px;
 }
@@ -753,15 +748,15 @@ section{
 
 .Sobremi-text{
 
-    top: 50%;
+    top: 40%;
 }
 
 .Sobremi-text h2{
 
     position: absolute;
     left: 67%;
-    top: -100%;
     color: azure;
+    margin-top: 5%;
 }
 
 .Sobremi-text p{
