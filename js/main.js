@@ -34,3 +34,16 @@ alert('Gracias por Contactarme, Pronto le Daré Un Retorno :)')
     }
 
 }
+
+/* Funcion de modo Oscuro*/
+const modoOscuro=document.querySelector('.dark');
+
+const body= document.body;
+
+modoOscuro.addEventListener('click',() => {
+
+    body.classList.toggle('dark-mode');
+
+
+});
+
