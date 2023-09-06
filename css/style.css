@@ -418,7 +418,7 @@ section{
 
  #Repositorios{
 
-    height: 50vh;
+    height: 53vh;
  }
 
  .titulo-repositorio{
@@ -441,12 +441,12 @@ section{
     background-image: url(../img/php.jpg);
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 53vh;
  }
 
  .repositorios{
 
-    height: 65%;
+    height: 67%;
     width: 50%;
     position: absolute;
     left: 24%;
@@ -462,7 +462,7 @@ section{
     border-radius: 18px;
     margin-top: 2%;
     margin-left: 17%;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   
  }
 
@@ -608,7 +608,7 @@ body.dark-mode h4{
 
     body.menu-active .nav-menu{
 
-      height: 23.5vh;
+      height: 24.5vh;
       background-color: #807a7a;
     }
 
@@ -720,7 +720,9 @@ body.dark-mode h4{
     .repositorios{
 
         width: 60%;
+        height: 75%;
         left: 20%;
+        top: 21%;
     }
 
     .repositorios img{
@@ -738,7 +740,7 @@ body.dark-mode h4{
     .repo-text{
 
         width: 50%;
-       top: 65%;
+       top: 64%;
        left: 28%;
     }
 
