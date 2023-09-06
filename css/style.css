@@ -608,7 +608,7 @@ body.dark-mode h4{
 
     body.menu-active .nav-menu{
 
-      height: 24.5vh;
+      height: 26.5vh;
       background-color: #807a7a;
     }
 
@@ -720,7 +720,7 @@ body.dark-mode h4{
     .repositorios{
 
         width: 60%;
-        height: 75%;
+        height: 76%;
         left: 20%;
         top: 21%;
     }
