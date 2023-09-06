@@ -623,9 +623,9 @@ body.dark-mode h4{
 
     body.menu-active .menu li{
 
-        margin: 0 5px;
+        margin: 1px 5px;
         padding: 8% 0;
-        line-height: 1;
+        line-height: 0.7;
        
     }
 
@@ -720,7 +720,7 @@ body.dark-mode h4{
     .repositorios{
 
         width: 60%;
-        height: 76%;
+        height: 77%;
         left: 20%;
         top: 21%;
     }
@@ -734,7 +734,7 @@ body.dark-mode h4{
 
     .repositorios a{
 
-        margin-left: 31%;
+        margin-left: 29%;
     }
 
     .repo-text{
@@ -790,9 +790,15 @@ body.dark-mode h4{
 
     .sociales{
 
-        left: 11%;
+        left: 17%;
         top: 93.5%;
     }
+
+    .redes-sociales{
+
+        margin: 0 1rem;
+     }
+    
 
     .btn{
         display: block;
