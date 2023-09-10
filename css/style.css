@@ -187,7 +187,7 @@ section{
 #SobreMi{
    position: relative;
    height: 62vh;
-   background-color: #191919;
+   background-color: #1b1a1a;
  }
 
 
@@ -505,8 +505,8 @@ section{
  .sociales{
 
     position: absolute;
-    top:88%;
-    left: 60%;
+    top: 30%;
+    left: 5%;
 
  }
 
@@ -520,7 +520,8 @@ section{
 
  .redes-sociales:hover{
 
-    color:rgb(71, 71, 231);
+    color:antiquewhite;
+    top:28%
  }
 
 
@@ -528,9 +529,9 @@ section{
  footer{
 
     position: relative;
-    background-color: #0a0a0a;
+    background-color: #1b1a1a;
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-top:#726b6b;
  }
 
@@ -544,8 +545,9 @@ section{
 
     position: absolute;
     color: azure;
-    top:30%;
-    left: 35%;
+    top: 30%;
+    left: 46%;
+    font-size: 20px;
  }
 
  .btn-inicio{
@@ -602,7 +604,7 @@ body.dark-mode h4{
 }
 
 
-
+/* los Media Query en mobile */
  @media(max-width:768px){
 
     body.menu-active .nav-menu{
@@ -650,6 +652,11 @@ body.dark-mode h4{
         font-size: 15px;
         right: 33%;
         top: 34%;
+    }
+
+    .icono{
+
+        display: none;
     }
 
     .titulo{
@@ -789,13 +796,15 @@ body.dark-mode h4{
 
     .sociales{
 
-        left: 21%;
-        top: 93.5%;
+        left: 6%;
+        top: 10.5%;
     }
 
     .redes-sociales{
 
-        margin: 0 1rem;
+        margin: 0 0.7rem;
+        font-size: 2rem;
+        color:antiquewhite;
      }
     
 
@@ -813,7 +822,9 @@ body.dark-mode h4{
 
     .pie-de-pagina{
 
-        left: 7%;
+        left: 2%;
+        top: 48%;
+        font-size: 1rem;
     }
 
     .btn-inicio{
@@ -825,19 +836,20 @@ body.dark-mode h4{
         position: absolute;
         color: azure;
         left: 60%;
-        top:75%;
+        top:80%;
         font-size: 20px;
      }
 
      footer{
 
-        height: 150px;
+        height: 200px;
      }
     
 
 
  }
 
+/* los Media Query en tablet */
 
 @media(max-width: 1024px){
 
