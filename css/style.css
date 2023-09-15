@@ -611,7 +611,12 @@ body.dark-mode h4{
 
       height: 26.5vh;
       background-color: #807a7a;
+      background-image: url(../img/background-img.png);
+      background-position: center;
+      background-size: cover;
+      opacity: 0.8;
     }
+
 
     body.menu-active .menu {
 
@@ -634,12 +639,13 @@ body.dark-mode h4{
 
         font-size: 15px;
         text-transform: uppercase;
-        color: rgb(198, 243, 243);
+        color: #191919;
     }
 
     body.menu-active i#close-btn{
 
         display:block;
+        color: #191919;
     }
 
     body.menu-active i#open-btn{
